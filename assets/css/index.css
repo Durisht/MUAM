@@ -86,6 +86,7 @@
 
 body {
   margin: 0;
+  max-width: 1400px;
   min-height: 100vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 28, 36, 0)), to(#141c24));
@@ -98,9 +99,14 @@ a {
   text-decoration: none !important;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 *,
@@ -317,7 +323,7 @@ ul, li {
 }
 
 .header__upgrade-button {
-  margin: 120px 0 0 540px;
+  margin: 120px auto;
   opacity: 0.2;
   text-align: center;
   cursor: pointer;
@@ -457,4 +463,106 @@ ul, li {
   padding-left: 70px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #141c24 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+i {
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 8px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.download__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 658px;
+  height: 273px;
+}
+
+.download__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Aire;
+  font-weight: 400;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.download__home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 52px;
+}
+
+.download__os {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 75px;
+}
+
+.social__item {
+  width: 100px;
+  height: 100px;
+  margin: 0 0 0 62px;
+}
+
+.social__icon {
+  display: block;
+  height: 100px;
+  width: 100px;
+  fill: #00c5fa;
+  -webkit-transition: fill .1s linear;
+  transition: fill .1s linear;
+}
+
+.social__icon:hover {
+  fill: white;
 }
