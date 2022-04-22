@@ -1,12 +1,13 @@
 body {
   margin: 0;
+  max-width: 1400px;
   min-height: 100vh;
   width: 100%;
 }
 
 .main__body {
   background: linear-gradient(rgba(20, 28, 36, 0), rgba(20, 28, 36, 1));
-  background-color: rgb(82, 126, 139) !important; 
+  background-color: rgb(82, 126, 139) !important;
 }
 
 a {
@@ -14,9 +15,14 @@ a {
   text-decoration: none !important;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:0;
 }
 
 *,
@@ -24,6 +30,3 @@ ul, li {
 *::before {
   box-sizing: border-box;
 }
-
-
-
