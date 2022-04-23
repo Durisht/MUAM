@@ -209,9 +209,27 @@
 }
 
 .corner {
-  width: 250px;
-  min-height: 60px;
-  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 45%, 90% 0);
+  height: 60px;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 30%, 90% 0);
   background: $white;
  }
+
+.corner--registration{
+  display:flex;
+  justify-content:flex-start;
+  margin:15px 125px 15px 0; 
+  color:rgb(0,0,0);
+  font-family: Aire;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 0 40px 38px;
+  width: 250;
+}
+
+.corner--registration:hover{
+  color:rgba(0,0,0, .5);
+  
+}
+
+
 

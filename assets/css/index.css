@@ -109,6 +109,61 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+h1 {
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Aire;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+input {
+  height: 75px;
+  width: 390px;
+  padding-left: 24px;
+  margin: 0 0 15px;
+  border-radius: 5px;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-box-align: center;
+          align-items: center;
+  font-family: Aire;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: Aire;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: Aire;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Aire;
+  font-weight: 400;
+  font-size: 24px;
+}
+
 *,
 *::after,
 *::before {
@@ -339,11 +394,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .corner {
-  width: 250px;
-  min-height: 60px;
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 45%, 90% 0);
-          clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 45%, 90% 0);
+  height: 60px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 30%, 90% 0);
+          clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 30%, 90% 0);
   background: white;
+}
+
+.corner--registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 15px 125px 15px 0;
+  color: black;
+  font-family: Aire;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 0 40px 38px;
+  width: 250;
+}
+
+.corner--registration:hover {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .about {
@@ -389,6 +463,35 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #00c5ff;
   -webkit-transform: translate(-84px, 13px);
           transform: translate(-84px, 13px);
+}
+
+.section__pre-post-title {
+  font-size: 14px;
+  padding: 0 128px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 3px 90px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.section__pre-post-title::before {
+  content: "";
+  display: block;
+  width: 117px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transform: translate(-129px, 7px);
+          transform: translate(-129px, 7px);
+}
+
+.section__pre-post-title::after {
+  content: "";
+  display: block;
+  width: 117px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transform: translate(129px, -7px);
+          transform: translate(129px, -7px);
 }
 
 .cloudgaming__about-subtitle {
@@ -498,6 +601,8 @@ i {
   -webkit-transform: rotate(135deg);
 }
 
+/* Download 
+================*/
 .download__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,13 +629,6 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: Aire;
-  font-weight: 400;
-  font-size: 48px;
   margin-bottom: 50px;
 }
 
@@ -565,4 +663,107 @@ i {
 
 .social__icon:hover {
   fill: white;
+}
+
+/* Registration 
+================*/
+.registration__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  max-width: 484px;
+}
+
+.registration__container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  height: 48px;
+  margin-bottom: 32px;
+}
+
+.registration__home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 40px;
+  height: 33px;
+}
+
+.registration__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+  margin-right: 57px;
+}
+
+.registration__text--active {
+  color: white;
+  margin-right: 40px;
+}
+
+.registration__text--inactive {
+  color: rgba(255, 255, 255, 0.5);
+  padding-right: 82px;
+}
+
+.registration__agreement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.registration__agreement__text {
+  width: 382px;
+  height: 112px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.2;
+  margin: 39px 19px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.registration__fast_entering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 240px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 151px;
+}
+
+.registration__fast_entering__item {
+  width: 25px;
+  height: 25px;
+  margin: 6px 10px;
 }
