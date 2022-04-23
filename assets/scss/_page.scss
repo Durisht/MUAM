@@ -163,5 +163,45 @@ height: 25px;
 margin: 6px 10px;
 }
 
+/* Registration_confimation
+================*/
+.confirmation__container{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items:flex-end;
+    width: 836px;
+}
+
+
+.confirmation__header{
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom: 65px;
+}
+
+.confirmation__home{
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    margin-right:40px;
+    height:33px;
+}
+
+.confirmation__header__text{
+    color:&white;
+    font-size: 39px;
+    margin-right: 111px;
+
+}
+
+
+.confirmation__text{
+    color: $gray;
+    align-items: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+}
 
 
