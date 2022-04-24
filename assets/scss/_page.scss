@@ -204,4 +204,77 @@ margin: 6px 10px;
     line-height: 1.8;
 }
 
+/* Contact
+================*/
+.contact__container{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items:flex-end;
+    width: 207px;
+    height: 120px;
+}
 
+.contact__text{
+    display:flex;
+    flex-direction:row;
+    
+    margin-bottom: 49px;
+}
+
+
+.download__home{
+    display:flex;
+
+    padding-right: 52px;
+}
+
+
+.contact__messenger{
+    display:flex;
+    margin-right: 49px;
+}
+
+
+.contact__item{
+    width:17px;
+    height:17px;
+    margin: 0 5px;
+}
+
+
+.contact__icon{
+    display:block;
+    height: 17px;
+    width: 17px;
+    fill:rgb(0,197,250);
+    
+    transition:fill .1s linear;
+}
+
+.social__icon:hover{
+    fill: rgb(255, 255, 255);
+
+}
+
+/* Entrance
+================*/
+.entrance__agreement{
+    display:flex;
+    flex-wrap: wrap;
+ }
+ 
+ 
+ .entrance__agreement__text{
+     width: 61px;
+     color:rgba(255, 255, 255, .5);
+     font-family: Roboto;
+     font-weight: 200;
+     font-size: 14px;
+     line-height: 1.2;
+     margin: 39px 0 72px 0;
+     text-align: left;
+
+     padding-top: 5px;
+ }
+ 

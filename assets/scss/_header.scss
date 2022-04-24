@@ -227,6 +227,18 @@
   width: 250;
 }
 
+.corner--entrance{
+  display:flex;
+  justify-content:flex-start;
+  margin:15px 57px 15px 38px; 
+  color:rgb(0,0,0);
+  font-family: Aire;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 0 100px 38px;
+  width: 250;
+}
+
 .corner--registration:hover{
   color:rgba(0,0,0, .5);
   
