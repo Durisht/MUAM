@@ -278,3 +278,100 @@ margin: 6px 10px;
      padding-top: 5px;
  }
  
+
+ /* Team
+================*/
+.subscriptions
+{
+    margin:92px 0px;
+}
+
+.sub__inner{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    max-width:1230px;
+    margin:0;
+}
+
+.sub__item{
+    width:32%;
+    min-width: 400px;
+    padding: 0 42px 0 37px;
+    margin: 5px;
+    background-color: rgb(31, 38, 49);
+    border-radius: 5px;
+}
+
+
+.sub__name{
+    margin:76px 35px 0 0;
+    
+    font-size:36px;
+    font-weight: 700;
+    line-height: 1.18;
+    color:$white;
+}
+
+.sub__price{
+    margin: 15px 0;
+    
+    font-size:24px;
+    font-weight: 500;
+    line-height: 1.17;
+    color:$white;
+    text-transform:uppercase;
+}
+
+.sub__text{
+    margin: 5px 0;
+    height: 174px;
+    font-size:21px;
+    font-weight: 300;
+    line-height: 150%;
+    color:$gray;
+}
+
+.download__text--a_s{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    
+    margin-bottom: 87px;
+}
+
+.btn{
+    display:inline-block;
+    vertical-align:text-bottom;
+    padding:20px 40px 0 ;
+    text-align:center;
+    margin: 11px 0 47px;
+    
+    border-radius:5px;
+    border: 0;
+    cursor: pointer;
+    
+    font-family: Aire;
+    font-size:24px;
+    color: #fff;
+    font-weight:400;
+    text-transform: uppercase;
+    text-decoration:none;
+    
+    transition:background 0.1 linear;
+}
+
+.btn--choose{
+    color: $bgc !important;
+    background-color:rgb(0, 197, 255);
+    width:321px;
+    height: 70px;
+}
+
+.btn--choose:hover{
+    color:rgb(0, 197, 255) !important;
+    background-color: $bgc;
+}
+
+
+

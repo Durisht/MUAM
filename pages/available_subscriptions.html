@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>download</title>
+        <link rel="stylesheet" href="/assets/css/index.css">
+    </head>
+    
+    <body class="page">
+        <div class="subscriptions">
+            <h1 class = "download__text download__text--a_s"><a class="download__home" href="/index.html" ><i class="left"></i></a>Доступные подписки</h1>
+            <div class="sub__inner">
+                <div class="sub__item" id = "item_1">
+                    <div class="sub__name" id = "header_text_1_1">Почасовая оплата</div>
+                    <div class="sub__price" id = "header_text_2_1">45 р.  -  час</div>
+                    <div class="sub__text" id = "text_1">
+                        Доступно:</br>
+                        Каталог</br>
+                        Виртуальный ПК</br>
+                        Безлимитная игровая сессия</div>
+                    <a class="btn btn--choose" href="#" id="btn_1">Выбрать</a>
+                </div>
+                    
+                <div class="sub__item" id = "item_2">
+                    <div class="sub__name" id = "header_text_1_2">Подписка Максимум</div>
+                    <div class="sub__price" id = "header_text_2_2">2999 р.  -  месяц</div>
+                    <div class="sub__text" id = "text_2">
+                        Доступно: </br>
+                        Каталог игр</br>
+                        Виртуальный ПК</br>
+                        Игровая сессия 10 часов/день</div>
+                    <a class="btn btn--choose" href="#" id="btn_2">Выбрать</a>
+                </div>
+                    
+                <div class="sub__item" id = "item_3">
+                    <div class="sub__name" id = "header_text_1_3">Подписка Минимум</div>
+                    <div class="sub__price" id = "header_text_2_3">1500 р.  -  месяц</div>
+                    <div class="sub__text" id = "text_3">                            Доступно:</br>
+                        Каталог игр</br>
+                        Игровая сессия 4 часов/день</div>
+                    <a class="btn btn--choose" href="#" id = "btn_3">Выбрать</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            btn_1.onmouseover = function() {
+            item_1.style.background = "#00C5FF";
+            header_text_1_1.style.color = "#141C24";
+            header_text_2_1.style.color = "#141C24";
+            text_1.style.color = "#000000";
+            };
+
+            btn_2.onmouseover = function() {
+            item_2.style.background = "#00C5FF";
+            header_text_1_2.style.color = "#141C24";
+            header_text_2_2.style.color = "#141C24";
+            text_2.style.color = "#000000";
+            };
+
+            btn_3.onmouseover = function() {
+            item_3.style.background = "#00C5FF";
+            header_text_1_3.style.color = "#141C24";
+            header_text_2_3.style.color = "#141C24";
+            text_3.style.color = "#000000";
+            };
+            
+            btn_1.onmouseleave = function() {
+            item_1.style.background= "#1F2631";
+            header_text_1_1.style.color = "#FFFFFF";
+            header_text_2_1.style.color = "#FFFFFF";
+            text_1.style.color = "#ABABAB";
+            };
+
+            btn_2.onmouseleave = function() {
+            item_2.style.background= "#1F2631";
+            header_text_1_2.style.color = "#FFFFFF";
+            header_text_2_2.style.color = "#FFFFFF";
+            text_2.style.color = "#ABABAB";
+            };
+
+            btn_3.onmouseleave = function() {
+            item_3.style.background= "#1F2631";
+            header_text_1_3.style.color = "#FFFFFF";
+            header_text_2_3.style.color = "#FFFFFF";
+            text_3.style.color = "#ABABAB";
+            };
+        </script>
+    </body>
+</html>
